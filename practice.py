@@ -1,15 +1,14 @@
-from flask import Flask,render_template
+from flask import Flask
 application = Flask(__name__)
-app = application
 
 
-@app.route('/')
+@application.route('/')
 def hello():
     # url = 'https://cxtz9vcsif.execute-api.us-east-1.amazonaws.com/test/users'
     # r = requests.get(url+'?email=menkorn770@gmail.com')
     # posts = r.json()['Item']
-    posts = {'city': 'complete', 'email': 'menkorn770@gmail.com', 'Sanity': 'complete'}
-    return str(posts)# from email.mime import application
+    # posts = {'city': 'complete', 'email': 'menkorn770@gmail.com', 'Sanity': 'complete'}
+    return "hello, world"# from email.mime import application
 # from flask import Flask
 # from flask import redirect
 # from flask import url_for
