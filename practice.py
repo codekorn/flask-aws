@@ -11,7 +11,7 @@ def hello():
     # r = requests.get(url+'?email=menkorn770@gmail.com')
     # posts = r.json()['Item']
     posts = {'city': 'complete', 'email': 'menkorn770@gmail.com', 'Sanity': 'complete'}
-    return render_template('index.html', posts=posts)# from email.mime import application
+    return str(posts)# from email.mime import application
 # from flask import Flask
 # from flask import redirect
 # from flask import url_for
