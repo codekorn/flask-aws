@@ -1,3 +1,4 @@
+from email.mime import application
 from flask import Flask
 from flask import redirect
 from flask import url_for
@@ -8,7 +9,8 @@ from flask_cognito_auth import login_handler
 from flask_cognito_auth import logout_handler
 from flask_cognito_auth import callback_handler
 
-app = Flask(__name__)
+application = Flask(__name__)
+app = application
 app.secret_key = "my super secret key"
 
 # Setup the flask-cognito-auth extention
