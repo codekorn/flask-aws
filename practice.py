@@ -1,6 +1,4 @@
-
 from flask import Flask,render_template
-import requests
 application = Flask(__name__)
 app = application
 
